@@ -6,7 +6,7 @@ uses
   ActiveDirectory.Types,
 
   System.SysUtils, System.Classes, Vcl.Controls, Vcl.Forms, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.ActnList,
-  Vcl.Menus, Vcl.StdActns, System.Actions;
+  Vcl.Menus, Vcl.StdActns, System.Actions, Vcl.Mask;
 
 type
   TfrmMain = class(TForm)

@@ -10,11 +10,9 @@ object frmMain: TfrmMain
   Font.Height = -11
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
   ShowHint = True
   OnCreate = FormCreate
-  PixelsPerInch = 96
   TextHeight = 13
   object pnlPrinc: TPanel
     Left = 0
@@ -79,7 +77,8 @@ object frmMain: TfrmMain
       EditLabel.Width = 40
       EditLabel.Height = 13
       EditLabel.Caption = 'Domain'
-      TabOrder = 0
+      TabOrder = 2
+      Text = ''
       OnChange = edtUserPassChange
     end
     object edtUserName: TLabeledEdit
@@ -90,7 +89,8 @@ object frmMain: TfrmMain
       EditLabel.Width = 52
       EditLabel.Height = 13
       EditLabel.Caption = 'UserName'
-      TabOrder = 1
+      TabOrder = 3
+      Text = ''
       OnChange = edtUserPassChange
     end
     object edtUserPass: TLabeledEdit
@@ -101,7 +101,8 @@ object frmMain: TfrmMain
       EditLabel.Width = 49
       EditLabel.Height = 13
       EditLabel.Caption = 'Password'
-      TabOrder = 2
+      TabOrder = 4
+      Text = ''
       OnChange = edtUserPassChange
     end
     object btnAuthenticate: TButton
@@ -110,7 +111,7 @@ object frmMain: TfrmMain
       Width = 85
       Height = 25
       Caption = 'Authenticate'
-      TabOrder = 5
+      TabOrder = 1
       OnClick = btnAuthenticateClick
     end
     object btnGetUserInfo: TButton
@@ -119,7 +120,7 @@ object frmMain: TfrmMain
       Width = 85
       Height = 25
       Caption = 'Get User Info'
-      TabOrder = 4
+      TabOrder = 0
       OnClick = btnGetUserInfoClick
     end
     object chkbxShowPassword: TCheckBox
@@ -128,7 +129,7 @@ object frmMain: TfrmMain
       Width = 97
       Height = 17
       Caption = 'Show Password'
-      TabOrder = 3
+      TabOrder = 5
       OnClick = chkbxShowPasswordClick
     end
   end
